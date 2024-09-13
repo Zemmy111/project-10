@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                background-color:plum;
+                color:black;
+            }
+            h1{
+                color:palevioletred;
+            }
+            /*Attribute Selector*/
+            a{
+                color:blue;
+                text-decoration: none;
+            }
+            a:hover{
+                color:red;
+            }
+            /*Child Selector*/
+            ul>li{
+                font-weight: bold;
+            }
+            /*Sibling Selector*/
+            h1+p{
+                background-color: chocolate;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            /*:hover Pseudo-class*/
+            ul li:hover{
+                color:forestgreen;
+            }
+            /*:nth-child(n)Pseudo-class*/
+            ul li:nth-child(3){
+                background-color: darkred;
+            }
+            /*: not(Selector) Pseudo-class*/
+            p:not(:first-of-type){
+                text-decoration: underline;
+            }
+            /*::before Pseudo-element*/
+            ul li::before{
+                content: "🚀";
+            }
+            /*::after Pseudo-element*/
+            a::after{
+            content:"🛸";
+            }
+            /*::first-letter Pseudo-element*/
+            p::first-letter{
+                font-size: 200%;
+                color:aquamarine
+            }
+        </style>
+        
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Welcome to the space's explorers club</h1>
+        <ul>
+            <li>Moon Missions</li>
+            <li>Mars Rove</li>
+            <li>International space station</li>
+            <li>Telescopes and stars</li>
+            <li>Black holes Mysteries</li>
+        </ul>
+        <p>Space exploration has always captivated human imagination. It's a journey to the unknown!</p>
+        <p>From the moon to distant galaxies, we continue to explore the vastness of space.</p>
+        <a href="#">Join our mission</a>  
+        <a href="#">Latest space news</a>
+        <a href="#">Gallery of the universe</a>
+    </body>
+</html>
